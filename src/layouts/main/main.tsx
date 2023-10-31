@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react'
 
-import Content from '@components/common/content/content'
+import Content from '@commonComponents/content/content'
 
 import styles from './main.module.css'
 

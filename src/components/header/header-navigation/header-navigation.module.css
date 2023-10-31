@@ -1,3 +1,12 @@
+.navigation_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.navigation_content {
+    padding-block: 0;
+}
+
 .navigation {
     display: grid;
     grid-auto-flow: column;
@@ -5,13 +14,17 @@
 }
 
 .nav_link {
-    padding: 0.2em 1em;
     border-bottom: 0.2em solid transparent;
+    padding: 0.2em 1em;
     transition: border-color 0.2s, color 0.2s;
 }
 
-.nav_link.active,
-.nav_link:hover {
+.nav_link.active {
     color: var(--primary);
     border-color: var(--primary);
+}
+
+.nav_link.focused,
+.nav_link:hover {
+    color: var(--primary);
 }

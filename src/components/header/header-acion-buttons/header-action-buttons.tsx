@@ -1,7 +1,7 @@
 'use client'
 import type { FC } from 'react'
 
-import Button from '@components/common/button/Button'
+import Button from '@commonComponents/button/Button'
 
 import styles from './header-action-buttons.module.css'
 

@@ -1,14 +1,14 @@
 .header {
     position: relative;
     display: grid;
-    justify-content: center;
+    gap: 2em;
     background: #fff;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
     z-index: 99;
 }
 
 .header_content {
-    padding-bottom: 0;
     display: grid;
 	gap: 2em;
+    padding-bottom: 0;
 }

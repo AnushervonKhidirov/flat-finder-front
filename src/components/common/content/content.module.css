@@ -2,5 +2,10 @@
     width: 100vw;
     max-width: 1200px;
     padding: 1em 2em;
+    margin: auto;
     box-sizing: border-box;
+}
+
+.content.no_padding {
+    padding: 0;
 }
