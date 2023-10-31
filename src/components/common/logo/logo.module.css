@@ -1,0 +1,30 @@
+.logo {
+    display: inline-block;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+    font-weight: 500;
+    gap: 0.25em;
+    color: var(--secondary);
+    font-size: 2em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.icon {
+    display: inline-block;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    transition: background-color 0.2s;
+}
+
+.logo:hover .icon {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: #fff;
+    border-radius: 0.2em;
+    padding: 0.2em;
+}

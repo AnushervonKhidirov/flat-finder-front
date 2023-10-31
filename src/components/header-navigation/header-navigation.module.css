@@ -1,0 +1,17 @@
+.navigation {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+}
+
+.nav_link {
+    padding: 0.2em 1em;
+    border-bottom: 0.2em solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.nav_link.active,
+.nav_link:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}

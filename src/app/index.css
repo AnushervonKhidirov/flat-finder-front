@@ -1,0 +1,57 @@
+:root {
+	--primary: #5bbbba;
+	--secondary: #333333;
+	--disabled: #e1e1e1;
+	--lightGrey: #9f9f9f;
+}
+
+body {
+	color: var(--secondary);
+	margin: 0;
+	user-select: none;
+	overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body.scroll_disabled {
+	overflow: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+sup {
+	font-size: 0.5em;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+input,
+textarea {
+	width: 100%;
+	color: var(--secondary);
+	font-size: 1em;
+	font-family: inherit;
+	border: .1em solid #ccc;
+	border-radius: 0.2em;
+	outline: none;
+	padding: 0.3em 0.5em;
+	box-sizing: border-box;
+	transition: border .3s;
+	resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: var(--lightGrey);
+}
+
+input:focus,
+textarea:focus {
+	border-color: var(--primary);
+}

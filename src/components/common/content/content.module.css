@@ -1,0 +1,6 @@
+.content {
+    width: 100vw;
+    max-width: 1200px;
+    padding: 1em 2em;
+    box-sizing: border-box;
+}
