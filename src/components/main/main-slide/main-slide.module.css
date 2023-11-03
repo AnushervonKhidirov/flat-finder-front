@@ -1,0 +1,28 @@
+.content_slide {
+	position: relative;
+	border-radius: 1em;
+	overflow: hidden;
+	margin: auto;
+	box-shadow: 0 0 .5em rgba(0, 0, 0, .3);
+}
+
+.content_slide_img {
+	aspect-ratio: 5/2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: background-image .5s;
+}
+
+.slide_title {
+	position: absolute;
+	top: 1em;
+	left: 2em;
+    background: rgba(0, 0, 0, .2);
+	color: #fff;
+	font-size: 2em;
+	border-radius: .25em;
+	padding: .5em 1em;
+	box-shadow: -.15em .15em .2em rgba(0, 0, 0, .3);
+	backdrop-filter: blur(20px);
+}

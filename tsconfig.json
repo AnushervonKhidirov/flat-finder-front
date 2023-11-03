@@ -22,11 +22,13 @@
     "paths": {
       "@/*": ["./"],
       "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"],
       "@layouts/*": ["layouts/*"],
       "@components/*": ["components/*"],
       "@commonComponents/*": ["components/common/*"],
       "@headerComponents/*": ["components/header/*"],
-      "@assets/*": ["assets/*"]
+      "@images/*": ["../public/images/*"],
+      "@fonts/*": ["../public/fonts/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

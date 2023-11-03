@@ -8,22 +8,22 @@ export const menuItems: INavigation[] = [
         subMenuItems: [
             {
                 name: 'Apartment',
-                path: 'buy/apartment',
+                path: 'apartment',
                 icon: Apartment,
             },
             {
                 name: 'House',
-                path: 'buy/house',
+                path: 'house',
                 icon: House,
             },
             {
                 name: 'Commercial',
-                path: 'buy/commercial',
+                path: 'commercial',
                 icon: Commercial,
             },
             {
                 name: 'Plot',
-                path: 'buy/plot',
+                path: 'plot',
                 icon: Plot,
             },
         ],
@@ -34,22 +34,22 @@ export const menuItems: INavigation[] = [
         subMenuItems: [
             {
                 name: 'Apartment',
-                path: 'rent/apartment',
+                path: 'apartment',
                 icon: Apartment,
             },
             {
                 name: 'Room',
-                path: 'rent/room',
+                path: 'room',
                 icon: Room,
             },
             {
                 name: 'House',
-                path: 'rent/house',
+                path: 'house',
                 icon: House,
             },
             {
                 name: 'Commercial',
-                path: 'rent/commercial',
+                path: 'commercial',
                 icon: Commercial,
             },
         ],
@@ -60,17 +60,17 @@ export const menuItems: INavigation[] = [
         subMenuItems: [
             {
                 name: 'Apartment',
-                path: 'daily_rent/apartment',
+                path: 'apartment',
                 icon: Apartment,
             },
             {
                 name: 'Room',
-                path: 'daily_rent/room',
+                path: 'room',
                 icon: Room,
             },
             {
                 name: 'House',
-                path: 'daily_rent/house',
+                path: 'house',
                 icon: House,
             },
         ],
@@ -81,17 +81,17 @@ export const menuItems: INavigation[] = [
         subMenuItems: [
             {
                 name: 'Apartment',
-                path: 'mortgage/apartment',
+                path: 'apartment',
                 icon: Apartment,
             },
             {
                 name: 'House',
-                path: 'mortgage/house',
+                path: 'house',
                 icon: House,
             },
             {
                 name: 'Commercial',
-                path: 'mortgage/commercial',
+                path: 'commercial',
                 icon: Commercial,
             },
         ],

@@ -33,10 +33,12 @@
     transition: fill 0.2s;
 }
 
+.nav_link.active,
 .nav_link:hover {
     color: var(--primary);
 }
 
+.nav_link.active .nav_icon,
 .nav_link:hover .nav_icon {
     fill: var(--primary);
 }
