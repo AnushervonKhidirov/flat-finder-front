@@ -8,7 +8,7 @@ import Link from 'next/link'
 import HeaderSubNavigation from '../header-sub-navigation/header-sub-navigation'
 import Content from '@components/common/content/content'
 
-import multiClasses from '@utils/multi-classes/multi-classes'
+import multiClasses from '@helpers/multi-classes/multi-classes'
 import { menuItems } from './constant'
 
 import styles from './header-navigation.module.css'
