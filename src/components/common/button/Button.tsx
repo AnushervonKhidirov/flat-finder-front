@@ -3,14 +3,14 @@ import type { FC, ReactNode } from 'react'
 import styles from './Button.module.css'
 
 interface IButton {
-    callback?: () => any
+    onClick?: () => any
     type?: 'submit' | 'reset'
     children: ReactNode
 }
 
-const Button: FC<IButton> = ({ callback, type, children }) => {
+const Button: FC<IButton> = ({ onClick, type, children }) => {
     return (
-        <button className={styles.button} onClick={callback} type={type}>
+        <button className={styles.button} onClick={onClick} type={type}>
             {children}
         </button>
     )
