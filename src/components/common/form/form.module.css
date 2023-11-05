@@ -1,0 +1,9 @@
+.form {
+    display: grid;
+    gap: 0.5em;
+    align-content: center;
+}
+
+.form button {
+    justify-self: self-end;
+}
