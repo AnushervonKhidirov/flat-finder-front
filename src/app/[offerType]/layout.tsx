@@ -1,5 +1,5 @@
 import type { FC, ReactNode } from 'react'
-import MainSlide from '@components/main/main-slide/main-slide'
+import MainSlide from '@components/main-slide/main-slide'
 
 const OffersLayout: FC<{ children: ReactNode }> = ({ children }) => {
     return (
