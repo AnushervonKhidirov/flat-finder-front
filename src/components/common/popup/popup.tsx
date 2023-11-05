@@ -1,14 +1,15 @@
 'use client'
 import type { FC, ReactNode } from 'react'
-import type { TCloseFn } from '@utils/types/popup'
+import type { IPopup, TCloseFn } from '@utils/types/popup'
 
 import { useEffect } from 'react'
 
 import { Close } from '@assets/icons'
+import { Headline1 } from '../headline/headline'
 
 import styles from './popup.module.css'
 
-const Popup: FC<{ closePopup: TCloseFn; children: ReactNode }> = ({ closePopup, children }) => {
+const Popup: FC<IPopup> = ({ title, closePopup, children }) => {
     useEffect(() => {
         function closeOnEscape(e: KeyboardEvent) {
             if (e.key === 'Escape') closePopup()
@@ -24,7 +25,10 @@ const Popup: FC<{ closePopup: TCloseFn; children: ReactNode }> = ({ closePopup, 
     return (
         <div className={styles.popup}>
             <PopupOverlay closePopup={closePopup} />
-            <PopupContent closePopup={closePopup}>{children}</PopupContent>
+            <PopupContent closePopup={closePopup}>
+                <Headline1>{title}</Headline1>
+                {children}
+            </PopupContent>
         </div>
     )
 }

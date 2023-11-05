@@ -20,14 +20,14 @@
     min-height: 300px;
     background-color: #fff;
     border-radius: 1em;
-    padding: 3em 2em;
+    padding: 2em;
     box-sizing: border-box;
 }
 
 .close_btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 0.5em;
+    right: 0.5em;
     width: 2.5em;
     height: 2.5em;
     fill: var(--tertiary);
