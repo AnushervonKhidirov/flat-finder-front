@@ -4,11 +4,11 @@
     gap: 2em;
     background: #fff;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
-    z-index: 99;
+    z-index: 1;
 }
 
 .header_content {
     display: grid;
-	gap: 2em;
+    gap: 2em;
     padding-bottom: 0;
 }

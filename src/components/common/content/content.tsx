@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react'
 
-import multiClasses from '@utils/multi-classes/multi-classes'
+import multiClasses from '@helpers/multi-classes/multi-classes'
 
 import styles from './content.module.css'
 
