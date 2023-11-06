@@ -1,6 +1,7 @@
 export interface IFormInputs {
     inputs: IInput[]
     submitText: string
+    callback: (data: IConvertedFormData) => void
 }
 
 export interface IInput {

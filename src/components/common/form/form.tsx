@@ -8,7 +8,7 @@ import Button from '../button/Button'
 
 import styles from './form.module.css'
 
-const Form: FC<IFormInputs> = ({ inputs, submitText }) => {
+const Form: FC<IFormInputs> = ({ inputs, submitText, callback }) => {
     const formElem = useRef<HTMLFormElement | null>(null)
 
     function submitForm(e: FormEvent<HTMLFormElement>) {
@@ -23,7 +23,7 @@ const Form: FC<IFormInputs> = ({ inputs, submitText }) => {
             dataToSubmit[input[0]] = input[1]
         }
 
-        console.log(dataToSubmit)
+        callback(dataToSubmit)
     }
 
     return (
