@@ -1,5 +1,5 @@
 import type { FC, FormEvent } from 'react'
-import type { IFormInputs, IConvertedFormData } from '@utils/types/form'
+import type { IFormInputs } from '@utils/types/form'
 
 import Input from '../input/input'
 import Button from '../button/Button'
@@ -16,7 +16,13 @@ const Form: FC<IFormInputs> = ({ inputs, submitText, callback }) => {
     return (
         <form className={styles.form} onSubmit={e => submitForm(e)}>
             {inputs.map(input => (
-                <Input name={input.name} type={input.type} placeholder={input.placeholder} key={input.name} />
+                <Input
+                    name={input.name}
+                    type={input.type}
+                    placeholder={input.placeholder}
+                    key={input.name}
+                    required={input.required}
+                />
             ))}
             <Button type='submit'>{submitText}</Button>
         </form>
