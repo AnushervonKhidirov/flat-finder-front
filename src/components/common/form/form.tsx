@@ -9,15 +9,8 @@ import styles from './form.module.css'
 const Form: FC<IFormInputs> = ({ inputs, submitText, callback }) => {
     function submitForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
-
-        const formData = new FormData(e.currentTarget)
-        const dataToSubmit: IConvertedFormData = {}
-
-        for (const input of formData.entries()) {
-            dataToSubmit[input[0]] = input[1]
-        }
-
-        callback(dataToSubmit)
+        const data = Object.fromEntries(new FormData(e.currentTarget))
+        callback(data)
     }
 
     return (
