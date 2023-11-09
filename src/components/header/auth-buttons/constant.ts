@@ -2,9 +2,9 @@ import { IInput } from '@utils/types/form'
 
 export const inputsLogInData: IInput[] = [
     {
-        name: 'email',
-        type: 'email',
-        placeholder: 'Email',
+        name: 'phone',
+        type: 'tel',
+        placeholder: 'Phone number',
         required: true,
     },
     {
@@ -34,6 +34,7 @@ export const inputsSignInData: IInput[] = [
         name: 'phone',
         type: 'tel',
         placeholder: 'Phone number',
+        required: true,
     },
     {
         name: 'password',

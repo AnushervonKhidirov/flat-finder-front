@@ -58,8 +58,16 @@ const SignInBtn: FC = () => {
         setPopupOpened(true)
     }
 
-    function signInHandler(data: IConvertedFormData) {
+    async function signInHandler(data: IConvertedFormData) {
         if (data.password !== data.repeat_password) return alert('password and repeat password should be the same!')
+
+        const result = await fetch('api/auth/registration', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application-json',
+            },
+        })
     }
 
     return (
