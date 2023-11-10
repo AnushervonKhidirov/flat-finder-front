@@ -1,6 +1,6 @@
-import { IOffer } from "@utils/types/offer";
+import { Offer } from "@utils/types/offer";
 
-export const offers: IOffer[] = [
+export const offers: Offer[] = [
     {
         id: 1,
         offerDate: '17.01.2022',

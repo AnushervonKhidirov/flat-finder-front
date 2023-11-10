@@ -1,6 +1,6 @@
 'use client'
 import type { FC } from 'react'
-import type { IConvertedFormData } from '@utils/types/form'
+import type { FormData } from '@utils/types/form'
 
 import { useState } from 'react'
 
@@ -32,7 +32,7 @@ const LogInBtn: FC = () => {
         setPopupOpened(true)
     }
 
-    function logIn(data: IConvertedFormData) {}
+    function logIn(data: FormData) {}
 
     return (
         <>
@@ -58,7 +58,7 @@ const SignInBtn: FC = () => {
         setPopupOpened(true)
     }
 
-    async function signInHandler(data: IConvertedFormData) {
+    async function signInHandler(data: FormData) {
         if (data.password !== data.repeat_password) return alert('password and repeat password should be the same!')
 
         const result = await fetch('api/auth/registration', {

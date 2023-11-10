@@ -1,12 +1,12 @@
 import { ReactNode } from 'react'
 
-export interface INavigation {
+export type Navigation = {
     name: string
     path: string
-    subMenuItems: ISubNavigation[]
+    subMenuItems: SubNavigation[]
 }
 
-export interface ISubNavigation {
+export type SubNavigation = {
     name: string
     path: string
     icon: () => ReactNode

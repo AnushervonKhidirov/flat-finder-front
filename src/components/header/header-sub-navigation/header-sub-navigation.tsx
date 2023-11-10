@@ -1,6 +1,6 @@
 'use client'
 import type { FC } from 'react'
-import type { ISubNavigation } from '@utils/types/header'
+import type { SubNavigation } from '@utils/types/header'
 
 import { usePathname } from 'next/navigation'
 
@@ -11,7 +11,7 @@ import multiClasses from '@helpers/multi-classes/multi-classes'
 
 import styles from './header-sub-navigation.module.css'
 
-const HeaderSubNavigation: FC<{ navItems: ISubNavigation[]; pagePath: string }> = ({ navItems, pagePath }) => {
+const HeaderSubNavigation: FC<{ navItems: SubNavigation[]; pagePath: string }> = ({ navItems, pagePath }) => {
     const path = usePathname()
 
     return (

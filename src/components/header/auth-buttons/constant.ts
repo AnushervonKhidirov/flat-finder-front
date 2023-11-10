@@ -1,6 +1,6 @@
-import { IInput } from '@utils/types/form'
+import { Input } from '@utils/types/form'
 
-export const inputsLogInData: IInput[] = [
+export const inputsLogInData: Input[] = [
     {
         name: 'phone',
         type: 'tel',
@@ -15,7 +15,7 @@ export const inputsLogInData: IInput[] = [
     },
 ]
 
-export const inputsSignInData: IInput[] = [
+export const inputsSignInData: Input[] = [
     {
         name: 'first_name',
         placeholder: 'First name',
@@ -29,12 +29,12 @@ export const inputsSignInData: IInput[] = [
         name: 'email',
         type: 'email',
         placeholder: 'Email',
+        required: true,
     },
     {
         name: 'phone',
         type: 'tel',
         placeholder: 'Phone number',
-        required: true,
     },
     {
         name: 'password',

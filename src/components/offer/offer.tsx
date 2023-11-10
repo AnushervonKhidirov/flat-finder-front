@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import type { IOffer } from '@utils/types/offer'
+import type { Offer } from '@utils/types/offer'
 
 import Button from '@components/common/button/Button'
 
@@ -16,7 +16,7 @@ const Offers: FC = () => {
     )
 }
 
-const Offer: FC<{ offer: IOffer }> = ({ offer }) => {
+const Offer: FC<{ offer: Offer }> = ({ offer }) => {
     return (
         <div className={styles.offer}>
             <OfferImage src={offer.image} />
@@ -29,7 +29,7 @@ const OfferImage: FC<{ src: string }> = ({ src }) => {
     return <div className={styles.offer_image} style={{ backgroundImage: `url(${src})` }} />
 }
 
-const OfferInfo: FC<{ offer: IOffer }> = ({ offer }) => {
+const OfferInfo: FC<{ offer: Offer }> = ({ offer }) => {
     return (
         <div className={styles.offer_info}>
             <GeneralInfo offer={offer} />
@@ -40,7 +40,7 @@ const OfferInfo: FC<{ offer: IOffer }> = ({ offer }) => {
     )
 }
 
-const GeneralInfo: FC<{ offer: IOffer }> = ({ offer }) => {
+const GeneralInfo: FC<{ offer: Offer }> = ({ offer }) => {
     return (
         <div className={styles.general_info}>
             <Params squareFootage={offer.squareFootage} rooms={offer.rooms} />

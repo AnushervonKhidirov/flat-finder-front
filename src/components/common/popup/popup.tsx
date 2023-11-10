@@ -1,6 +1,6 @@
 'use client'
 import type { FC, ReactNode } from 'react'
-import type { IPopup, TCloseFn } from '@utils/types/popup'
+import type { Popup, PopupCloseFn } from '@utils/types/popup'
 
 import { useEffect } from 'react'
 
@@ -9,7 +9,7 @@ import { Headline1 } from '../headline/headline'
 
 import styles from './popup.module.css'
 
-const Popup: FC<IPopup> = ({ title, closePopup, children }) => {
+const Popup: FC<Popup> = ({ title, closePopup, children }) => {
     useEffect(() => {
         function closeOnEscape(e: KeyboardEvent) {
             if (e.key === 'Escape') closePopup()
@@ -33,7 +33,7 @@ const Popup: FC<IPopup> = ({ title, closePopup, children }) => {
     )
 }
 
-const PopupContent: FC<{ closePopup: TCloseFn; children: ReactNode }> = ({ closePopup, children }) => {
+const PopupContent: FC<{ closePopup: PopupCloseFn; children: ReactNode }> = ({ closePopup, children }) => {
     return (
         <div className={styles.content}>
             <ClosePopup closePopup={closePopup} />
@@ -42,11 +42,11 @@ const PopupContent: FC<{ closePopup: TCloseFn; children: ReactNode }> = ({ close
     )
 }
 
-const PopupOverlay: FC<{ closePopup: TCloseFn }> = ({ closePopup }) => {
+const PopupOverlay: FC<{ closePopup: PopupCloseFn }> = ({ closePopup }) => {
     return <div className={styles.overlay} onClick={closePopup}></div>
 }
 
-const ClosePopup: FC<{ closePopup: TCloseFn }> = ({ closePopup }) => {
+const ClosePopup: FC<{ closePopup: PopupCloseFn }> = ({ closePopup }) => {
     return (
         <div className={styles.close_btn} onClick={closePopup}>
             <Close />

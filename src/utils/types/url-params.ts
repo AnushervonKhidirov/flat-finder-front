@@ -1,9 +1,9 @@
-export interface IOfferParams {
+export type OfferParams = {
     offerType: string
 }
 
-export interface IRealEstate extends IOfferParams {
-    realEstateType: TRealEstate
+export type Estate = OfferParams & {
+    estateType: EstateTypes
 }
 
-export type TRealEstate = 'apartment' | 'house' | 'room' | 'commercial' | 'plot'
+export type EstateTypes = 'apartment' | 'house' | 'room' | 'commercial' | 'plot'

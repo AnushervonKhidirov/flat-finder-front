@@ -1,7 +1,7 @@
-import type { INavigation } from '@utils/types/header'
+import type { Navigation } from '@utils/types/header'
 import { Apartment, Commercial, House, Plot, Room } from '@assets/icons'
 
-export const menuItems: INavigation[] = [
+export const menuItems: Navigation[] = [
     {
         name: 'Buy',
         path: 'buy',

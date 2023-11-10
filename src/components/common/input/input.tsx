@@ -1,11 +1,11 @@
 import type { FC, ChangeEvent } from 'react'
-import type { IInput } from '@utils/types/form'
+import type { Input } from '@utils/types/form'
 
 import { useState } from 'react'
 
 import styles from './input.module.css'
 
-const Input: FC<IInput> = ({ name, type = 'text', placeholder, required }) => {
+const Input: FC<Input> = ({ name, type = 'text', placeholder, required }) => {
     const [value, setValue] = useState('')
 
     function inputHandler(e: ChangeEvent<HTMLInputElement>) {

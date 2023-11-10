@@ -1,6 +1,6 @@
 'use client'
 import type { FC } from 'react'
-import type { TRealEstate } from '@utils/types/url-params'
+import type { EstateTypes } from '@utils/types/url-params'
 
 import { usePathname } from 'next/navigation'
 
@@ -10,7 +10,7 @@ import styles from './main-slide.module.css'
 
 const MainSlide: FC = () => {
     const path = usePathname()
-    const currPath = path.replace('/', '').split('/')[1] as TRealEstate
+    const currPath = path.replace('/', '').split('/')[1] as EstateTypes
     const image = currPath ? slides[currPath].img.src : slides.main.img.src
 
     return (

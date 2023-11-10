@@ -1,7 +1,7 @@
 import type { FC } from 'react'
-import type { IRealEstate } from '@utils/types/url-params'
+import type { Estate } from '@utils/types/url-params'
 
-const RealEstatePage: FC<{ params: IRealEstate }> = ({ params }) => {
+const RealEstatePage: FC<{ params: Estate }> = ({ params }) => {
     return <div></div>
 }
 

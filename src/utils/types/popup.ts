@@ -1,13 +1,13 @@
 import type { ReactNode } from 'react'
 
-export interface IPopup {
+export type Popup = {
     title: string
-    closePopup: TCloseFn
+    closePopup: PopupCloseFn
     children: ReactNode
 }
 
-export type TCloseFn = () => void
+export type PopupCloseFn = () => void
 
-export interface IPopupState {
+export type PopupState = {
     isOpened: boolean
 }

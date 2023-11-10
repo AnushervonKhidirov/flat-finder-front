@@ -1,16 +1,16 @@
-export interface IFormInputs {
-    inputs: IInput[]
+export type FormInputs = {
+    inputs: Input[]
     submitText: string
-    callback: (data: IConvertedFormData) => void
+    callback: (data: FormData) => void
 }
 
-export interface IInput {
+export type Input = {
     name: string
     type?: 'text' | 'email' | 'password' | 'number' | 'radio' | 'search' | 'tel'
     placeholder?: string
     required?: boolean
 }
 
-export interface IConvertedFormData {
+export type FormData = {
     [key: string]: FormDataEntryValue
 }

@@ -1,4 +1,4 @@
-export interface IOffer {
+export type Offer = {
     id: number
     offerDate: string
     squareFootage: number

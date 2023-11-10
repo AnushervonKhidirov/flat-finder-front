@@ -1,12 +1,12 @@
 import type { FC, FormEvent } from 'react'
-import type { IFormInputs } from '@utils/types/form'
+import type { FormInputs } from '@utils/types/form'
 
 import Input from '../input/input'
 import Button from '../button/Button'
 
 import styles from './form.module.css'
 
-const Form: FC<IFormInputs> = ({ inputs, submitText, callback }) => {
+const Form: FC<FormInputs> = ({ inputs, submitText, callback }) => {
     function submitForm(e: FormEvent<HTMLFormElement>) {
         e.preventDefault()
         const data = Object.fromEntries(new FormData(e.currentTarget))

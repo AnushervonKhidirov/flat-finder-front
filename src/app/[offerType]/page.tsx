@@ -1,9 +1,9 @@
 import type { FC } from 'react'
-import type { IOfferParams } from '@utils/types/url-params'
+import type { OfferParams } from '@utils/types/url-params'
 
 import Offers from '@components/offer/offer'
 
-const OffersPage: FC<{ params: IOfferParams }> = ({ params }) => {
+const OffersPage: FC<{ params: OfferParams }> = ({ params }) => {
     return (
         <div>
             <Offers />
