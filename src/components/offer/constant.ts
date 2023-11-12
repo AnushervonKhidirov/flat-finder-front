@@ -23,7 +23,7 @@ export const offers: Offer[] = [
         totalFloors: 6,
         price: 200000,
         phoneNumber: 901813481,
-        image: 'https://dw1ixebl10gex.cloudfront.net/wp-content/uploads/2020/12/21200557/feature-LivingRoom-091_TREES_HH_AP20_40.jpg',
+        image: 'https://images.dwell.com/photos/6158387786045366272/6191290565376466944/medium.jpg',
         address: 'Москва, Измайловский проезд, 10к3',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quidem molestias quia in voluptas labore optio aliquam animi, ducimus laudantium itaque rem velit reprehenderit, nulla vel officiis, tempora minus vitae?'
     },

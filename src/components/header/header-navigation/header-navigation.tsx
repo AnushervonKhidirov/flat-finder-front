@@ -23,12 +23,13 @@ const HeaderNavigation: FC = () => {
             <Content extraClasses={styles.navigation_content}>
                 <nav className={styles.navigation}>
                     {menuItems.map((item, index) => {
-                        const activeStyles = currPath === item.path ? styles.active : ''
+                        const path = `/offers/${item.path}`
+                        const activeStyles = currPath === path ? styles.active : ''
                         const focusedStyles = hoveredNav === index ? styles.focused : ''
 
                         return (
                             <Link
-                                href={`/${item.path}`}
+                                href={path}
                                 className={multiClasses([styles.nav_link, focusedStyles, activeStyles])}
                                 onMouseEnter={() => setHoveredNav(index)}
                                 key={item.path}
@@ -42,7 +43,7 @@ const HeaderNavigation: FC = () => {
             {hoveredNav !== null && (
                 <HeaderSubNavigation
                     navItems={menuItems[hoveredNav].subMenuItems}
-                    pagePath={menuItems[hoveredNav].path}
+                    pagePath={`./offers/${menuItems[hoveredNav].path}`}
                 />
             )}
         </div>

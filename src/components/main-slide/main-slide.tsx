@@ -10,7 +10,7 @@ import styles from './main-slide.module.css'
 
 const MainSlide: FC = () => {
     const path = usePathname()
-    const currPath = path.replace('/', '').split('/')[1] as EstateTypes
+    const currPath = path.replace('/', '').split('/')[2] as EstateTypes
     const image = currPath ? slides[currPath].img.src : slides.main.img.src
 
     return (

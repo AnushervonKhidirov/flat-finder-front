@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import type { Offer } from '@utils/types/offer'
 
-import Button from '@components/common/button/Button'
+import Button from '@components/common/button/button'
 
 import { offers } from './constant'
 import styles from './offer.module.css'
