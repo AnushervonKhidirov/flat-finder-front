@@ -1,21 +1,6 @@
 import { Input } from '@utils/types/form'
 
-export const inputsLogInData: Input[] = [
-    {
-        name: 'phone',
-        type: 'tel',
-        placeholder: 'Phone number',
-        required: true,
-    },
-    {
-        name: 'password',
-        type: 'password',
-        placeholder: 'Password',
-        required: true,
-    },
-]
-
-export const inputsSignInData: Input[] = [
+export const inputsData: Input[] = [
     {
         name: 'first_name',
         placeholder: 'First name',

@@ -1,0 +1,21 @@
+.button_ink {
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1em;
+    font-family: inherit;
+    border: none;
+    border-radius: 0.2em;
+    outline: none;
+    padding: 0.3em 1em;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button_ink:hover {
+    background-color: var(--tertiary);
+}
+
+.button_ink:active {
+    transform: scale(0.98);
+}

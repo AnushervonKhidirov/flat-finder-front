@@ -11,12 +11,13 @@ export const metadata: Metadata = {
     description: 'Here you can buy or sale apartments',
 }
 
-const RootLayout: FC<{ children: ReactNode }> = ({ children }) => {
+const RootLayout: FC<{ children: ReactNode; popup: ReactNode }> = ({ children, popup }) => {
     return (
         <html lang='en'>
             <body>
                 <Header />
                 <Main>{children}</Main>
+                {popup}
             </body>
         </html>
     )

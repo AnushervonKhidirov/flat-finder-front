@@ -4,13 +4,13 @@ import multiClasses from '@helpers/multi-classes/multi-classes'
 
 import styles from './content.module.css'
 
-interface IContent {
+type Content = {
     extraClasses?: string
     removePadding?: boolean
     children: ReactNode
 }
 
-const Content: FC<IContent> = ({ extraClasses, removePadding, children }) => {
+const Content: FC<Content> = ({ extraClasses, removePadding, children }) => {
     return (
         <div
             className={multiClasses([

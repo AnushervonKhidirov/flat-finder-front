@@ -1,14 +1,14 @@
 import type { FC, ReactNode } from 'react'
 
-import styles from './Button.module.css'
+import styles from './button.module.css'
 
-interface IButton {
+type Button = {
     onClick?: () => any
     type?: 'submit' | 'reset'
     children: ReactNode
 }
 
-const Button: FC<IButton> = ({ onClick, type, children }) => {
+const Button: FC<Button> = ({ onClick, type, children }) => {
     return (
         <button className={styles.button} onClick={onClick} type={type}>
             {children}

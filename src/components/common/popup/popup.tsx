@@ -2,14 +2,21 @@
 import type { FC, ReactNode } from 'react'
 import type { Popup, PopupCloseFn } from '@utils/types/popup'
 
-import { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { useEffect, useCallback } from 'react'
 
 import { Close } from '@assets/icons'
-import { Headline1 } from '../headline/headline'
+import { Headline1 } from '@components/common/headline/headline'
 
 import styles from './popup.module.css'
 
-const Popup: FC<Popup> = ({ title, closePopup, children }) => {
+const Popup: FC<Popup> = ({ title, children }) => {
+    const router = useRouter()
+
+    const closePopup = useCallback(() => {
+        router.back()
+    }, [router])
+
     useEffect(() => {
         function closeOnEscape(e: KeyboardEvent) {
             if (e.key === 'Escape') closePopup()

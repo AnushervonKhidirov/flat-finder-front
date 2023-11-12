@@ -1,3 +1,5 @@
+'use client'
+
 import type { FC, ChangeEvent } from 'react'
 import type { Input } from '@utils/types/form'
 

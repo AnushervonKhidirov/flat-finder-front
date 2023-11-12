@@ -1,7 +1,7 @@
 export type FormInputs = {
     inputs: Input[]
     submitText: string
-    callback: (data: FormData) => void
+    submit?: (data: FormDataObj) => void
 }
 
 export type Input = {
@@ -11,6 +11,6 @@ export type Input = {
     required?: boolean
 }
 
-export type FormData = {
+export type FormDataObj = {
     [key: string]: FormDataEntryValue
 }
