@@ -1,3 +1,5 @@
+import type { User } from './user'
+
 export type FormInputs = {
     inputs: Input[]
     submitText: string
@@ -13,4 +15,13 @@ export type Input = {
 
 export type FormDataObj = {
     [key: string]: FormDataEntryValue
+}
+
+export type SignUpForm = Omit<User, 'id'> & {
+    repeat_password: string
+}
+
+export type SignInForm = {
+    email: string
+    password: string
 }

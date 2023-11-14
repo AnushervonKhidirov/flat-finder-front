@@ -6,7 +6,3 @@ export type User = {
     phone?: string
     password: string
 }
-
-export type UserForm = Omit<User, 'id'> & {
-    repeat_password: string
-}
