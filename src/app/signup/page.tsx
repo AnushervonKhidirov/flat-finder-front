@@ -9,9 +9,11 @@ const SignUp: FC = () => {
     async function signUpHandler(data: FormDataObj) {
         if (data.password !== data.repeat_password) return alert('password and repeat password should be the same!')
 
-        const result = await fetch('api/auth/registration', {
+        const { repeat_password, ...sendData } = data
+
+        const result = await fetch('api/auth/signup', {
             method: 'POST',
-            body: JSON.stringify(data),
+            body: JSON.stringify(sendData),
             headers: {
                 'Content-Type': 'application-json',
             },
