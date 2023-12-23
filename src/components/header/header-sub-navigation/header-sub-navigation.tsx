@@ -25,7 +25,7 @@ const HeaderSubNavigation: FC<{ navItems: SubNavigation[]; pagePath: string }> =
                         return (
                             <Link
                                 href={linkUrl}
-                                className={multiClasses([styles.nav_link, isActive])}
+                                className={multiClasses(styles.nav_link, isActive)}
                                 key={navItem.path}
                             >
                                 <span className={styles.nav_icon}>{<navItem.icon />}</span>

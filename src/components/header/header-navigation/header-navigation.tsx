@@ -30,7 +30,7 @@ const HeaderNavigation: FC = () => {
                         return (
                             <Link
                                 href={path}
-                                className={multiClasses([styles.nav_link, focusedStyles, activeStyles])}
+                                className={multiClasses(styles.nav_link, focusedStyles, activeStyles)}
                                 onMouseEnter={() => setHoveredNav(index)}
                                 key={item.path}
                             >

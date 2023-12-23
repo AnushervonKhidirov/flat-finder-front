@@ -13,11 +13,11 @@ type Content = {
 const Content: FC<Content> = ({ extraClasses, removePadding, children }) => {
     return (
         <div
-            className={multiClasses([
+            className={multiClasses(
                 styles.content,
                 removePadding ? styles.no_padding : '',
                 extraClasses ? extraClasses : '',
-            ])}
+            )}
         >
             {children}
         </div>

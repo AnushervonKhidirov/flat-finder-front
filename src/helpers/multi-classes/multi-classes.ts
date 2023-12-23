@@ -1,3 +1,3 @@
-export default function multiClasses(classNames: string[]): string {
-    return classNames.join(' ').trim().replace(/ +/g, ' ')
+export default function multiClasses(...args: string[]): string {
+    return args.join(' ').trim().replace(/ +/g, ' ')
 }
