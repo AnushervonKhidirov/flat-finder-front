@@ -1,4 +1,4 @@
-import type { UserDB } from './database'
+import { User } from './user'
 
 export type FormInputs = {
     inputs: Input[]
@@ -17,7 +17,8 @@ export type FormDataObj = {
     [key: string]: FormDataEntryValue
 }
 
-export type SignUpForm = Omit<UserDB, 'id'> & {
+export type SignUpForm = Omit<User, 'id'> & {
+    password: string
     repeat_password: string
 }
 
